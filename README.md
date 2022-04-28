@@ -3,14 +3,26 @@
 Powershell Helper for Scripts to find/use config files
 
 ## Installation (Powered by [PowerShellGallery](https://powershellgallery.com/packages/Get-ConfigFile))
-PS> ```Install-Script Get-ConfigFile```
+PS>
+```ps
+Install-Script Get-ConfigFile
+```
 
-PS> Install-Script -Name Get-ConfigFile
+PS>
+```ps
+Install-Script -Name Get-ConfigFile
+```
 
 ## Example
-PS> ```Get-ConfigFile``` (-help)
+PS> 
+```ps
+Get-ConfigFile
+``` (-help)
 
-PS> ```Get-ConfigFile name```
+PS>
+```ps
+Get-ConfigFile config
+```
 
 ## Release Notes
 - 0.1 init

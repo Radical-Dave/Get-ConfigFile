@@ -26,6 +26,7 @@ Get-ConfigFile config
 
 ## Release Notes
 - 0.1 init
+- 0.2 cleanup
 
 ## Copyright
 David Walker, [Radical Dave](https://github.com/radical-dave), [Sitecore Dave](https://github.com/sitecoredave)

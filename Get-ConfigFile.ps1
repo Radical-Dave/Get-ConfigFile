@@ -4,7 +4,7 @@
 #####################################################
 <#PSScriptInfo
 
-.VERSION 0.1
+.VERSION 0.2
 
 .GUID 01002a90-c61d-4475-ad98-7369907e54e3
 
@@ -29,7 +29,8 @@
 .EXTERNALSCRIPTDEPENDENCIES 
 
 .RELEASENOTES
-
+- 0.1 init
+- 0.2 cleanup
 #>
 
 <# 
@@ -58,7 +59,8 @@ begin {
 	Write-Verbose "$PSScriptRoot\$PSScriptName $name called by:$PSCallingScript"
 }
 process {
-	if (!$results -and (Test-Path "*.$name*"))
+	$results = ''
+	if (Test-Path "*.$name*")
 	{
 		if (Test-Path "*.$name.user") { $results = ".$name.user" } 
 		elseif (Test-Path ".$name") { $results = ".$name"}
